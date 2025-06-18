@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSRF Verification Failed</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .error-container {
+      text-align: center;
+      background-color: #fff;
+      padding: 40px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .error-container h1 {
+      font-size: 2rem;
+      color: #d9534f;
+    }
+    .error-container p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+    }
+    .error-container a {
+      margin-top: 20px;
+      display: inline-block;
+      text-decoration: none;
+      color: #007bff;
+    }
+    .error-container a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="error-container">
+    <h1>CSRF Verification Failed</h1>
+    <p>The request could not be completed due to security reasons.</p>
+    <p>Please go back and try again.</p>
+    <a href="/">Return to Login</a>
+  </div>
+</body>
+</html>

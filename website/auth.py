@@ -20,7 +20,12 @@ def login():
                 flash('Logged in sucessfully',category="sucess")
                 return redirect(url_for('views.home'))
             else:
-                flash("User dosent exist or password is incorrect",category='error')
+                flash('Incorrect password, try again.', category='error')
+                
+        else:
+            flash("User dosent exist",category='error')
+            
+            return redirect(url_for('auth.signup'))
 
     return render_template('login.html',user=current_user)
 @auth.route('/logout')

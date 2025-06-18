@@ -16,7 +16,9 @@
 
 
 <form method="POST" >
+   <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
     <textarea class="form-control" name="note" id="note"></textarea>
+    <br />
     <div align="center">
         <button type="submit" class="btn btn-primary">Add note</button>
     </div>
